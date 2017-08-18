@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200px"
+    android:layout_height="320px"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+    <ImageView 
+        android:layout_width="150px"
+        android:layout_height="200px"
+        android:layout_marginTop="30dp"
+        android:id="@+id/police_avatar"
+        />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="姓名:范佩西"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:id="@+id/police_name"
+        android:gravity="center_horizontal"
+        />
+        <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="职位:民警"
+         android:textSize="18sp"
+        android:textColor="@color/black"
+        android:id="@+id/police_position"
+        android:gravity="center_horizontal"
+        />
+</LinearLayout>

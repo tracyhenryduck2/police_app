@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/numberkeyboard"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="14px" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/one"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:background="@drawable/change_color"
+            android:gravity="center"
+            android:text="@string/one"
+            android:textColor="#000"
+            android:textSize="@dimen/DefaultTabbarHeight"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:layout_marginLeft="5px"
+            android:background="@drawable/change_color"
+            android:gravity="center"
+            android:text="@string/two"
+            android:textColor="#000"
+            android:textSize="@dimen/DefaultTabbarHeight"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:layout_marginLeft="5px"
+            android:background="@drawable/change_color"
+            android:gravity="center"
+            android:text="@string/three"
+            android:textColor="#000"
+            android:textSize="@dimen/DefaultTabbarHeight"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+       <Button
+            android:id="@+id/four"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:background="@drawable/change_color"
+            android:gravity="center"
+            android:text="@string/four"
+            android:textColor="#000"
+                        android:textSize="@dimen/DefaultTabbarHeight"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/five"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:layout_marginLeft="5px"
+            android:background="@drawable/change_color"
+            android:gravity="center"
+            android:text="@string/five"
+            android:textColor="#000"
+                        android:textSize="@dimen/DefaultTabbarHeight"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:layout_marginLeft="5px"
+            android:background="@drawable/change_color"
+            android:gravity="center"
+            android:text="@string/six"
+            android:textColor="#000"
+                        android:textSize="@dimen/DefaultTabbarHeight"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:background="@drawable/change_color"
+            android:gravity="center"
+            android:text="@string/seven"
+            android:textColor="#000"
+            android:textSize="@dimen/DefaultTabbarHeight"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:layout_marginLeft="5px"
+            android:background="@drawable/change_color"
+            android:gravity="center"
+            android:text="@string/eight"
+            android:textColor="#000"
+            android:textSize="@dimen/DefaultTabbarHeight"
+            android:textStyle="bold" />
+                <Button
+            android:id="@+id/nine"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:layout_marginLeft="5px"
+            android:background="@drawable/change_color"
+            android:gravity="center"
+            android:text="@string/nine"
+            android:textColor="#000"
+            android:textSize="@dimen/DefaultTabbarHeight"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:background="@drawable/change_color"
+            android:gravity="center"
+            android:textColor="#000"
+                        android:textSize="@dimen/DefaultTabbarHeight"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:layout_marginLeft="5px"
+            android:background="@drawable/change_color"
+            android:gravity="center"
+            android:text="@string/zero"
+            android:textColor="#000"
+                        android:textSize="@dimen/DefaultTabbarHeight"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:layout_marginLeft="5px"
+            android:background="@drawable/change_color"
+            android:gravity="center"
+            android:textColor="#000"
+                        android:textSize="@dimen/DefaultTabbarHeight"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

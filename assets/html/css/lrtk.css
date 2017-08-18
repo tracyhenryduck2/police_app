@@ -1,0 +1,71 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: "Microsoft YaHei";
+}
+div, form, dl, dd, dt, ul, li, p, img, a, span, pp, s1, s2, s3, s4, input {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a{outline:none}
+a:link {
+text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+/*¿Í·þ°´Å¥*/
+#service{position:fixed; _position:absolute;right:2%;top:70%;width:56px;height:100px;filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity: 0.9;opacity: 0.9;}
+#service a{display:block;width:56px;height:100px;text-indent:-9999px;background:url(../images/service.png) no-repeat;cursor:pointer;margin-bottom:1px}
+#service a.mscBtn{height:50px;background:#fff url(../images/musicBtn.gif) no-repeat}
+#service a.goTop{height:50px;width:56px;background-position:0 bottom}
+#service a.goTop:hover{background-position:-56px bottom}
+#service a.pause{background-position:0 bottom}
+#service .srvLog{}
+#service .srvLog:hover{background-position:-56px 0}
+#service .srvCns{background-position:0 -100px}
+#service .srvCns:hover{background-position:-56px -100px}
+#service .srvDj{background-position:0 -200px}
+#service .srvDj:hover{background-position:-56px -200px}
+
+
+
+
+img {
+	vertical-align: middle;
+	width: 100%
+}
+.clear {
+	clear: both;
+}
+
+.biaoti{ width:100%; font-size:1.5em; color:#000; line-height:1.5em;}
+.shijian{ width:100%; font-size:1em; color:#999; line-height:3em}
+.neir{ width:100%; color:#333; line-height:1.5em; margin-top:5%} 
+
+.touxiang{ width:94%; padding:3%;}
+.touxiang1{ width:100%;}
+
+
+.anniu {
+	background: #f19b21;
+	width: 30%;
+	
+	color: #FFF;
+	font-family: "Microsoft YaHei" !important;
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+	border-radius: 4px;
+	
+	float:right;
+	
+}

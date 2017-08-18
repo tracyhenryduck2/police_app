@@ -1,0 +1,42 @@
+<!doctype html>
+<html ng-app="project">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>消息</title>
+<link href="css/css1.css" rel="stylesheet" type="text/css" />
+  <link href="css/police.css" rel="stylesheet" type="text/css" /> 
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/common.css" />
+  <script type="text/javascript" src="js/jquery1.9.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/huifu.js"></script>
+
+</head>
+
+<body ng-controller="ProjectController as project">
+<div class="body2">
+  <div class="logo"><img src="images/logo_03.png"  alt=""/></div>
+
+  <div class="neirong">
+    <div class="zhao1"><img ng-src="http://{{project.url}}/photo/{{project.image}}"  alt=""/>
+      <p class="wenzi">姓名：{{project.name}}<br>
+        职务：{{project.position}}</p>
+    </div>
+    <div class="huifu">
+      <div class="wenzi1">{{project.response.content}}</div>
+      <div class="wenzi2">{{project.response.content2}}</div>
+    </div>
+    <div class="wenben">
+      
+      <div class="anniu6" ng-show="project.response.size>1" >下一条</div>
+      <div class="anniu7" >关闭</div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bj"
+
+    android:orientation="vertical" >
+
+ 
+    
+        <AbsoluteLayout
+        android:layout_width="1728px"
+        android:layout_height="877px"
+        android:layout_x="96px"
+        android:layout_y="101px"
+        android:background="@drawable/bg"
+        android:orientation="vertical" >
+        
+            
+            
+        <TextView 
+            android:layout_width="432px"
+            android:layout_height="84px"
+            android:text="1.填写您的手机号"
+            android:textColor="@color/buzhou_enable"
+            android:textSize="@dimen/BigTextSize"
+            android:layout_x="0px"
+            android:layout_y="50px"
+            android:gravity="center"
+            android:background="@drawable/bai"
+            android:id="@+id/tishi_1"
+            />
+        <ImageView 
+            android:layout_width="432px"
+            android:layout_height="20px"
+            android:background="@drawable/lan_huanchong"
+            android:layout_x="0px"
+            android:layout_y="134px"
+            android:id="@+id/tishiimg_1"
+            />
+        <TextView 
+            android:layout_width="432px"
+            android:layout_height="84px"
+            android:layout_x="432px"
+            android:layout_y="50px"
+            android:text="2.填写您的姓名"
+            android:textColor="@color/buzhou_disable"
+            android:textSize="@dimen/BigTextSize"
+            android:gravity="center"
+            android:background="@drawable/huise"
+                        android:id="@+id/tishi_2"
+            />    
+        <ImageView 
+            android:layout_width="432px"
+            android:layout_height="20px"
+            android:background="@drawable/hui_huanchong"
+            android:layout_x="432px"
+            android:layout_y="134px"
+            android:id="@+id/tishiimg_2"            
+            />
+        <TextView 
+            android:layout_width="432px"
+            android:layout_height="84px"
+            android:layout_x="864px"
+            android:layout_y="50px"
+            android:text="3.填写您的留言"
+            android:textColor="@color/buzhou_disable"
+            android:textSize="@dimen/BigTextSize"
+            android:gravity="center"
+            android:background="@drawable/huise"
+                        android:id="@+id/tishi_3"
+            />
+        <ImageView 
+            android:layout_width="432px"
+            android:layout_height="20px"
+            android:background="@drawable/hui_huanchong"
+            android:layout_x="864px"
+            android:layout_y="134px"
+            android:id="@+id/tishiimg_3"
+            />     
+           <TextView 
+            android:layout_width="432px"
+            android:layout_height="84px"
+            android:layout_x="1296px"
+            android:layout_y="50px"
+            android:text="4.确认您的信息"
+            android:textColor="@color/buzhou_disable"
+            android:textSize="@dimen/BigTextSize"
+            android:gravity="center"
+            android:background="@drawable/huise"
+                        android:id="@+id/tishi_4"
+            />     
+        <ImageView 
+            android:layout_width="432px"
+            android:layout_height="20px"
+            android:background="@drawable/hui_huanchong"
+            android:layout_x="1296px"
+            android:layout_y="134px"
+            android:id="@+id/tishiimg_4"            
+            />
+
+    
+        
+            <ImageView 
+        android:layout_width="150px"
+        android:layout_height="200px"
+        android:layout_x="100px"
+        android:layout_y="250px"
+        android:id="@+id/police_avatar"
+        />
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="100px"
+        android:layout_y="500px"
+        android:text="姓名：张三"
+        android:textSize="@dimen/BigTextSize"
+        android:id="@+id/po_name"
+        android:textColor="@color/black"
+        />
+    
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="100px"
+        android:layout_y="550px"
+        android:text="职位：民警"
+        android:id="@+id/po_position"
+        android:textSize="@dimen/BigTextSize"
+        android:textColor="@color/black"
+
+        />
+    
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="460px"
+        android:layout_y="250px"
+        android:text="您的姓名:"
+        android:textColor="@color/black"
+        android:id="@+id/txt_name"
+        android:textSize="@dimen/BigTextSize"
+        />
+     <EditText
+         android:id="@+id/name" 
+         android:layout_x="670px"
+         android:layout_y="210px"
+         android:layout_width="400px"
+         android:layout_height="100px"
+         android:text=""
+         android:textSize="@dimen/BigTextSize"
+         android:background="@color/white"
+         android:textColor="@color/gray"
+         android:imeOptions="actionNext"
+         android:singleLine="true"  
+      android:inputType="text" 
+         />    
+
+     
+             <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="460px"
+        android:layout_y="250px"
+        android:text="您的手机号:"
+        android:id="@+id/txt_phone_num"
+        android:textColor="@color/black"
+        android:textSize="@dimen/BigTextSize"
+        />
+     <EditText
+         android:id="@+id/phone_num" 
+         android:layout_x="670px"
+         android:layout_y="210px"
+         android:layout_width="400px"
+         android:layout_height="100px"
+         android:text=""
+         android:textSize="@dimen/BigTextSize"
+         android:background="@color/white"
+         android:textColor="@color/gray"
+         android:focusable="false"  
+         android:focusableInTouchMode="false"
+         />  
+    
+     
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="460px"
+        android:layout_y="250px"
+        android:text="您的留言:"
+        android:id="@+id/txt_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/BigTextSize"
+        />
+     <EditText
+         android:id="@+id/content" 
+         android:layout_x="670px"
+         android:layout_y="210px"
+         android:layout_width="600px"
+         android:layout_height="300px"
+         android:text=""
+         android:gravity="top"
+         android:textSize="@dimen/BigTextSize"
+         android:background="@color/white"
+         android:textColor="@color/gray"
+         android:imeOptions="actionNext"
+              android:inputType="textMultiLine"
+      android:minLines="8"
+      android:maxLines="10" 
+         />
+    
+     	         <Button 
+     	       android:layout_x="1330px"
+               android:layout_y="210px"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:background="@drawable/register"
+	           android:text="完成"
+	           android:textColor="@color/black"
+	           android:textSize="@dimen/BigTextSize"
+	           android:padding="20px"
+	           android:id="@+id/wancheng"
+	           android:visibility="gone"
+	             />
+        
+    </AbsoluteLayout>
+    
+    
+    
+    
+                   <Button 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/tishi"
+          android:background="@drawable/tishibtn_bg"
+          android:layout_x="1600px"
+          android:layout_y="12px" 
+          android:text="软件说明"
+          android:textColor="@color/white"
+          android:textSize="23sp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:paddingLeft="15dp"
+           android:paddingRight="15dp"
+           />
+  
+
+
+    
+          <Button 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/last"
+          android:background="@drawable/tishibtn_bg"
+          android:layout_x="1600px"
+          android:layout_y="910px" 
+          android:text="上一层"
+          android:textColor="@color/white"
+          android:textSize="23sp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:paddingLeft="15dp"
+           android:paddingRight="15dp"
+           />
+                 
+
+</AbsoluteLayout>

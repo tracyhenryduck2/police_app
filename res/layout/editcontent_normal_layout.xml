@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:clickable="true"  
+    android:orientation="vertical"  
+    android:padding="20.0dip"
+     >  
+  
+    <LinearLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_gravity="center"  
+        android:background="@drawable/bg_bombbox"  
+        android:orientation="vertical" >  
+  
+        <TextView  
+            android:id="@+id/title"  
+            android:textSize="18dp"
+            android:textColor="#ffffffff"
+            android:layout_width="fill_parent"  
+            android:layout_height="40.0dip"  
+            android:gravity="center"  
+            android:text="您的信息"  
+            android:visibility="visible" />  
+  
+        
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:padding="10dp"
+           >
+           <TextView 
+               android:layout_width="220px"
+               android:layout_height="wrap_content"
+               android:text="您的手机:"
+               android:layout_weight="1"
+               android:textColor="@color/black"
+               android:textSize="@dimen/BigTextSize2"
+               />
+
+           <TextView
+               android:layout_width="680px"
+               android:layout_height="wrap_content"
+               android:layout_weight="4"
+               android:text="13136363636"
+               android:textSize="@dimen/BigTextSize2"
+               android:id="@+id/shouji"
+               android:textColor="@color/gray" />
+            
+	         <Button 
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:background="@drawable/register"
+	           android:text="修改"
+	           android:textColor="@color/black"
+	           android:id="@+id/btn_phone"
+	             />
+       </LinearLayout>
+  
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:padding="10dp"
+           >
+           <TextView 
+               android:layout_width="220px"
+               android:layout_height="wrap_content"
+               android:text="您的姓名:"
+               android:layout_weight="1"
+               android:textColor="@color/black"
+               android:textSize="@dimen/BigTextSize2"
+               />
+
+           <TextView
+               android:layout_width="680px"
+               android:layout_height="wrap_content"
+               android:layout_weight="4"
+               android:text="薛俊俊"
+               android:textSize="@dimen/BigTextSize2"
+               android:id="@+id/name"
+               android:textColor="@color/gray" />
+            
+	         <Button 
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:background="@drawable/register"
+	           android:text="修改"
+	           android:textColor="@color/black"
+	           android:id="@+id/btn_name"
+	             />
+       </LinearLayout>
+       
+       
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:padding="10dp"
+           >
+           <TextView 
+               android:layout_width="220px"
+               android:layout_height="wrap_content"
+               android:text="您的留言:"
+               android:textSize="@dimen/BigTextSize2"
+               android:layout_weight="1"
+               android:textColor="@color/black"
+               />
+
+           <TextView
+               android:layout_width="680px"
+               android:layout_height="500px"
+               android:layout_weight="4"
+               android:text=""
+               android:textSize="@dimen/BigTextSize2"
+               android:id="@+id/content"
+               android:textColor="@color/gray" />
+            
+	         <Button 
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:background="@drawable/register"
+	           android:text="修改"
+	           android:textColor="@color/black"
+	           android:id="@+id/btn_content"
+	             />
+       </LinearLayout>       
+  
+        <LinearLayout  
+            android:layout_width="fill_parent"  
+            android:layout_height="60.0dip"  
+            android:layout_gravity="bottom"  
+            android:background="@drawable/dialog_bottom_bg"  
+            android:gravity="center"
+            android:id="@+id/anns"  
+            android:orientation="horizontal" >  
+  
+            <Button  
+                android:id="@+id/positiveButton"  
+                android:textSize="15dp"
+                android:textColor="#ffffffff" 
+                android:layout_width="114.0dip"  
+                android:layout_height="40.0dip"  
+                android:background="@drawable/btn_ok_selector"  
+                android:gravity="center"  
+                android:text="发送" />  
+  
+            <Button  
+                android:id="@+id/negativeButton"   
+                android:textSize="15dp"
+                android:textColor="#ff666666" 
+                android:layout_width="114.0dip"  
+                android:layout_height="40.0dip"  
+                android:layout_marginLeft="20.0dip"  
+                android:background="@drawable/btn_cancel_selector"  
+                android:gravity="center"  
+                android:text="重新填写" />  
+        </LinearLayout>  
+    </LinearLayout>  
+  
+</FrameLayout>

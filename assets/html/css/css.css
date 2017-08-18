@@ -1,0 +1,266 @@
+@charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0
+}
+html {
+	font-size: 62.5%;
+*font-size:63%
+}
+a{outline:none}
+a:link {
+text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+}
+a:hover {
+text-decoration: none;
+}
+a:active {
+text-decoration: none;}
+.body {
+	width: 1024px;
+	height: 768px;
+	margin: 0 auto;
+	
+	background: url(../images/bj.jpg) no-repeat;
+}
+.logo {
+	width: 291px;
+	height: 109px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.neirong {
+	width: 787px;
+	height: 590px;
+	background: url(../images/jb2_03.png) no-repeat;
+	margin: 0 auto;
+	margin-top: 2%;
+}
+.zhao {
+	width: 128px;
+	height: 266px;
+	float: left;
+	padding: 15px 34px
+}
+.zhao1 {
+	width: 128px;
+	height: 420px;
+	float: left;
+	padding: 80px 50px
+}
+.wenzi {
+	color: #666;
+	font-size: 16px;
+	line-height: 25px;
+	font-family: "Microsoft YaHei" !important;background:none \8; text-align:left
+}
+.huifu {
+	width: 550px;
+	height: 250px;
+	float: right;
+	padding-top: 60px;
+}
+.wenzi1 {
+	font-size: 20px;
+	color: #474747;
+	float: left;
+	background: #FFF;
+	border: 1px solid #dfdfdf;
+	padding: 8px;
+	border-radius: 8px;
+	width:auto;
+	line-height: 30px; margin-top:20px;
+}
+.wenzi2 {
+	font-size: 20px;
+	color: #fff;
+	float:right;
+	background: #00b5ff;
+	border: 1px solid #dfdfdf;
+	padding: 8px;
+	border-radius: 8px;
+	width:auto;
+	line-height: 30px; margin-top:20px; margin-right:30px;
+}
+.wenben {
+	width: 550px;
+	float: right
+}
+.wenben1 {
+	width: 492px;
+	height: 144px;
+}
+.textarea01 {
+	width: 492px;
+	height: 144px;
+	overflow: auto;
+	overflow-x: hidden;
+	resize: none;
+	padding: 4px;
+}
+.textarea02 {
+	width: 402px;
+	height: 144px;
+	overflow: auto;
+	overflow-x: hidden;
+	resize: none;
+	padding: 4px;
+}
+.textsty {
+	background-color: #fff;
+	border: 1px solid #dbd4cd;
+	padding-left: 15px;
+	color: #333;
+	font-size: 14px;
+}
+.anniu {
+	background: #0096d4;
+	width: 78px;
+	height: 32px;
+	color: #FFF;
+	font-family: "Microsoft YaHei" !important;
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	border-radius: 4px;
+	margin-top: 15px;
+	float: left;
+	margin-right: 20px;
+}
+.anniu1 {
+	background: #00cf7a;
+	width: 78px;
+	height: 32px;
+	color: #FFF;
+	font-family: "Microsoft YaHei" !important;
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	border-radius: 4px;
+	margin-top: 15px;
+	float: left;
+	margin-right: 20px;
+}
+.anniu2 {
+	background: #9c6300;
+	width: 78px;
+	height: 32px;
+	color: #FFF;
+	font-family: "Microsoft YaHei" !important;
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	border-radius: 4px;
+	margin-top: 15px;
+	float: left;
+	margin-right: 20px;
+}
+.anniu3 {
+	background: #ce034b;
+	width: 109px;
+	height: 40px;
+	color: #FFF;
+	font-family: "Microsoft YaHei" !important;
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+	border-radius: 4px;
+	margin-top: 15px;
+	float: right;
+	margin-right: 50px;
+}
+.anniu4 {
+	background:#09C;
+	width: 109px;
+	height: 40px;
+	color: #FFF;
+	font-family: "Microsoft YaHei" !important;
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+	border-radius: 4px;
+	margin-top: 15px;
+	float: right;
+	margin-right: 50px;
+}
+.anniu6 {
+	background: #ce034b;
+	width: 209px;
+	height: 80px;
+	color: #FFF;
+	font-family: "Microsoft YaHei" !important;
+	text-align: center;
+	font-size: 26px;
+	line-height: 80px;
+	border-radius: 4px;
+	margin-top: 55px;
+	float: right;
+	margin-right: 50px;
+}
+.anniu7 {
+	background:#09C;
+	width: 209px;
+	height: 80px;
+	color: #FFF;
+	font-family: "Microsoft YaHei" !important;
+	text-align: center;
+	font-size: 26px;
+	line-height: 80px;
+	border-radius: 4px;
+	margin-top: 55px;
+	float: right;
+	margin-right: 50px;
+}
+.anniu5 {
+	background: #ce034b;
+	width: 109px;
+	height: 40px;
+	color: #FFF;
+	font-family: "Microsoft YaHei" !important;
+	text-align: center;
+	font-size: 16px;
+	line-height: 40px;
+	border-radius: 4px;
+	margin-top: 15px;
+	float:left;
+	margin-right: 50px;
+}
+.exchange-suggemain { width: 550px;
+	height: 250px;
+	float: right;
+	padding-top: 80px;
+}
+.exchange-suggemain ul {
+	overflow: hidden;
+	width: 100%;
+}
+.exchange-suggemain li {
+	float: left;
+	width: 100%;
+	padding-bottom: 7px;list-style:none
+}
+.exchange-suggemain li .tit {
+	width: 82px;
+	font-size: 16px;
+	line-height: 41px; color:#666;font-family: "Microsoft YaHei" !important;
+}
+
+.fl {
+    display: inline;
+    float: left;
+}
+.textsty {
+    background-color: #fff;
+    border: 1px solid #dbd4cd;
+    padding-left: 15px;
+    color: #333;
+    font-size: 14px;
+}.text01 {width: 406px;
+    height: 35px;
+    line-height: 35px;
+}
+.tishi{ width:327px; height:163px; margin:0 auto; padding-top:120px;}
+.wenzi3{ width:600px; height:200px; text-align:center; margin:0 auto; font-size:24px; padding-top:70px; color:#484847;}

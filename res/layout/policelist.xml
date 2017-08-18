@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bj"
+    android:orientation="vertical" >
+
+                   <Button 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/tishi"
+          android:background="@drawable/tishibtn_bg"
+          android:layout_x="1600px"
+          android:layout_y="12px" 
+          android:text="软件说明"
+          android:textColor="@color/white"
+          android:textSize="23sp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:paddingLeft="15dp"
+           android:paddingRight="15dp"
+           />
+  
+    <AbsoluteLayout
+        android:layout_width="1728px"
+        android:layout_height="877px"
+        android:layout_x="96px"
+        android:layout_y="101px"
+        android:background="@drawable/bg"
+        android:orientation="vertical" >
+        
+     <ImageView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_x="800px"
+         android:layout_y="10px"
+         android:src="@drawable/logo_03"
+         />
+        
+       <Button 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/last_list"
+          android:background="@drawable/img6_40"
+          android:layout_x="100px"
+          android:layout_y="50px" 
+           />
+        <Button 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/next_list"
+          android:background="@drawable/img6_39"
+          android:layout_x="100px"
+          android:layout_y="720px" 
+           />
+       <ListView 
+        android:layout_width="250px"
+        android:layout_height="600px"
+        android:layout_x="10px"
+        android:layout_y="100px"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:listSelector="@color/transparent"
+        android:id="@+id/department"
+        android:focusable="true"
+        android:scrollbars="none"
+        />
+        
+        <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="1452px"
+        android:layout_height="760px"
+        android:background="@null"
+        android:layout_x="270px"
+        android:layout_y="100px"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" /> 
+        
+         <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/font"
+          android:textSize="35sp"
+          android:text="1/4"
+          android:layout_x="800px"
+          android:layout_y="780px"
+          android:id="@+id/pageinfo"   
+             />
+        
+    </AbsoluteLayout>
+
+    
+          <Button 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/logout"
+          android:background="@drawable/tishibtn_bg"
+          android:layout_x="1600px"
+          android:layout_y="910px" 
+          android:text="退出系统"
+          android:textColor="@color/white"
+          android:textSize="23sp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:paddingLeft="15dp"
+           android:paddingRight="15dp"
+           />
+                 
+
+</AbsoluteLayout>

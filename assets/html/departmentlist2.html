@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html ng-app="project">
+  <head>
+    <title>警民通</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<script type="text/javascript" src="js/jquery1.9.js"></script>
+ <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/refresh.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/departmentlist2.js"></script>
+  <link href="css/police.css" rel="stylesheet" type="text/css" /> 
+  <style type="text/css">
+     .anniu9{    background: #09C;
+    width: 120px;
+    height: 80px;
+    color: #FFF;
+    font-family: "Microsoft YaHei" !important;
+    text-align: center;
+    font-size: 26px;
+    line-height: 80px;
+    border-radius: 4px;
+        position: absolute;
+    top: 22px;
+    right: 229px;
+    float: right;} 
+
+     .anniu8{  background: #ce034b;
+    width: 120px;
+    height: 80px;
+    color: #FFF;
+    font-family: "Microsoft YaHei" !important;
+    text-align: center;
+    font-size: 26px;
+    line-height: 80px;
+    border-radius: 4px;
+    position: absolute;
+    top: 22px;
+    right: 86px;
+    float: right;} 
+    #left {
+    width: 70px;
+    position: absolute;
+    top: 484px;
+    left: 516px;
+    }
+        #right {
+    width: 70px;
+    position: absolute;
+    top: 484px;
+    right: 82px;
+    }
+
+        #up {
+    width: 70px;
+    position: absolute;
+    top: 168px;
+    left: 152px;
+    }
+        #down {
+    width: 70px;
+    position: absolute;
+    top: 983px;
+    left: 152px;
+    }
+
+    .dep {    text-align: left;margin-top: 52px;}
+    .dep img{width: 33px;}
+    .dep p {    float: left;margin-top: 6px;    margin-right: 40px;margin-left:28px;font-weight: bolder;font-family: '微软雅黑';color: #2BB2FF;font-size: 3.0em}
+     .dep.current p {color: red}
+    #tuichu {width: 200px;
+    height: 60px;
+    border: 3px solid white;
+    font-size: 2.5em;
+    line-height: 60px;
+    font-weight: bold;
+    border-radius: 7px;
+    position: absolute;
+    top: 994px;
+    right: 131px;
+    color: white;
+    }
+    #shuom {
+       width: 200px;
+    height: 100px;
+    border: 3px solid white;
+    font-size: 2.5em;
+    line-height: 100px;
+    font-weight: bold;
+    border-radius: 7px;
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 154px;
+    }
+
+    #map {width:25%;float: left;    margin-top: 17px;}
+    #map2 { width: 70%;float: left;margin-top: 47px;}
+   #pageshow{       font-size: 4em;color: #2BB2FF;margin-top: 56px;}
+  </style>
+  </head>
+<body ng-controller="ProjectController as project"  style="width:100%;text-align:center;background: url(../html/images/bj.jpg) repeat-y;">
+  <div class="body1">
+
+    <div  id="shuom">软件说明</div>
+    <div class="logo"><img src="images/logo_03.png"  alt=""/></div>
+    <div class="neirong">
+  
+       <div id="map">
+         <div ng-class="{'current':project.index==$index}" ng-show="$index<(7*(project.page+1))&&$index>=(7*project.page)" class="dep" ng-repeat="map in project.list" ><p>{{map.name}}</p><span><img src="images/img6_38.png"></span></div>
+
+      </div>
+
+       <div id="map2">
+          <div ng-show="$index<(8*(project.page_2+1))&&$index>=(8*project.page_2)" class="zhao" ng-repeat="map in project.policelist" ng-style="map.style"><img class="avc" ng-src="http://{{project.url}}/photo/{{map.image}}"  alt="" style="cursor:pointer;"/>   
+              <div class="wenzi" style="cursor:pointer;">姓名：{{map.name }}<br/>
+                职务：{{map.position }}<br/>
+              </div>
+           </div>
+
+      </div>
+        <div class="clear"></div>
+        <div id="up" ng-show="project.page>0" ><img src="images/img6_40.png"></div>
+        <div id="down"   ng-hide="(((project.page+1)*7)>project.list.length)||((((project.page+1)*7)==project.list.length)&&(project.list.length%7==0))" ><img src="images/img6_39.png"></div> 
+
+
+         <div id="left"  ng-show="project.page_2>0" ><img src="images/img6_35.png"></div>
+        <div id="right"  ng-hide="(((project.page_2+1)*8)>project.policelist.length)||((((project.page_2+1)*8)==project.policelist.length)&&(project.policelist.length%8==0))" ><img src="images/img6_38.png"></div>  
+        <div id="pageshow" ng-show="project.policelist.length>0"><span>{{project.page_2+1}}</span><span>/</span><span>{{project.totalpage}}</span></div>
+
+      <div  id="tuichu">退出</div>
+    </div>
+  <div class="clear"></div>
+
+   </div>
+</body>
+  
+</html>

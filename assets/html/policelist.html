@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html ng-app="project">
+  <head>
+    <title>警民通</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<script type="text/javascript" src="js/jquery1.9.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/refresh.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="js/policelist.js"></script>
+  <link href="css/police.css" rel="stylesheet" type="text/css" /> 
+  <style type="text/css">
+     .anniu9{    background: #09C;
+    width: 120px;
+    height: 80px;
+    color: #FFF;
+    font-family: "Microsoft YaHei" !important;
+    text-align: center;
+    font-size: 26px;
+    line-height: 80px;
+    border-radius: 4px;
+        position: absolute;
+    top: 22px;
+    right: 229px;
+    float: right;} 
+
+     .anniu8{  background: #ce034b;
+    width: 120px;
+    height: 80px;
+    color: #FFF;
+    font-family: "Microsoft YaHei" !important;
+    text-align: center;
+    font-size: 26px;
+    line-height: 80px;
+    border-radius: 4px;
+    position: absolute;
+    top: 22px;
+    right: 86px;
+    float: right;} 
+    #left {
+    width: 70px;
+    position: absolute;
+    top: 484px;
+    left: 82px;
+    }
+        #right {
+    width: 70px;
+    position: absolute;
+    top: 484px;
+    right: 82px;
+    }
+
+    #last {
+width: 200px;
+    height: 60px;
+    border: 3px solid white;
+    font-size: 2.5em;
+    line-height: 60px;
+    font-weight: bold;
+    border-radius: 7px;
+    position: absolute;
+    top: 994px;
+    right: 131px;
+    color: white;
+    }
+    #shuom {
+       width: 200px;
+    height: 100px;
+    border: 3px solid white;
+    font-size: 2.5em;
+    line-height: 100px;
+    font-weight: bold;
+    border-radius: 7px;
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 154px;
+    }
+
+  </style>
+  </head>
+<body ng-controller="ProjectController as project"  style="width:100%;text-align:center;background: url(../html/images/bj.jpg) repeat-y;">
+
+  <div class="body1">
+     <div  id="shuom">软件说明</div>
+    <div class="logo"><img src="images/logo_03.png"  alt=""/></div>
+    <div class="neirong">
+  
+       <div id="map">
+          <div ng-show="$index<(8*(project.page+1))&&$index>=(8*project.page)" class="zhao" ng-repeat="map in project.list" ng-style="map.style"><img class="avc" ng-src="http://{{project.url}}/photo/{{map.image}}"  alt="" style="cursor:pointer;"/>   
+              <div class="wenzi" style="cursor:pointer;">姓名：{{map.name }}<br/>
+                职务：{{map.position }}<br/>
+              </div>
+              <div  ng-show="map.cnt!=null&&map.cnt!=''" class="unread wenzi" style="cursor:pointer;position:relative"><span style="float:left;padding-left:12px;">未读反馈：</span><span  style="    border-radius: 14px;background: #F00;color: #FFF;width: 28px;height: 28px;text-align: center;line-height: 20px;position: absolute;top: 13px;left: 164px;">{{map.cnt}}</span>
+              </div>
+              <div class="wenzi"></div>
+           </div>
+
+      </div>
+        <div class="clear"></div>
+        <div id="left" ng-show="project.page>0"  ><img src="images/img6_35.png"></div>
+        <div id="right"  ng-hide="(((project.page+1)*8)>project.list.length)||((((project.page+1)*8)==project.list.length)&&(project.list.length%8==0))" ><img src="images/img6_38.png"></div> 
+        <div id="last" >返回上层</div>
+    </div>
+  <div class="clear"></div>
+
+   </div>
+</body>
+  
+</html>

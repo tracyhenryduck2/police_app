@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html ng-app="project">
+  <head>
+    <title>警民通</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<script type="text/javascript" src="js/jquery1.9.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/refresh.js"></script>
+  <script type="text/javascript" src="js/policeedit.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <link href="css/police.css" rel="stylesheet" type="text/css" /> 
+
+  </head>
+  
+<body ng-controller="ProjectController as project"  style="width:100%;text-align:center;">                                    
+<div class="body2">
+  <div class="logo"><img src="images/logo_03.png"  alt=""/></div>
+  <div class="neirong">
+    <div class="pho_zhao"><img ng-src="http://{{project.url}}/photo/{{project.image}}"  alt=""/>
+      <div class="wenzi">姓名：{{project.name}}<br/>
+        职务：{{project.position}}<br/>
+        </div>
+    </div>
+    <div class="exchange-suggemain">
+      <ul>
+       
+          <li>
+            <label class="fl tit">您的姓名：</label>
+            <div class="inputbox fl">
+            <input style="     width: 84%;margin-top: 25px;height: 39px;font-size: 28px;" type="text" name="noteBean.name" ng-model="project.editName" id="name"  value="" class="textsty text01"/> 
+            </div>
+          </li>
+          <li>
+            <label class="fl tit">您的联系电话：</label>
+            <div class="inputbox fl">
+              <input onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" style="  width: 84%;margin-top: 25px;height: 39px;font-size: 28px;" type="number" name="noteBean.phone" ng-model="project.editPhone" id="phone"  value="" class="textsty text01"/>
+            </div>
+            <script type="text/javascript">
+            function keyPress() {    
+                 var keyCode = event.keyCode;    
+                 if ((keyCode >= 48 && keyCode <= 57))    
+                {    
+                     event.returnValue = true;    
+                 } else {    
+                       event.returnValue = false;    
+                }    
+             } 
+            </script>
+          </li>
+          <li>
+            <label class="fl tit">您的留言：</label>
+            <div class="inputbox fl">
+              <textarea  class="textsty textarea02" name="noteBean.content" ng-model="project.content" id="content"></textarea>
+            </div>
+          </li>
+       
+      </ul>
+             <div class="anniu6" style="cursor:pointer;">关&nbsp;&nbsp;闭</div>
+      <div class="anniu7"  style="cursor:pointer;">发&nbsp;&nbsp;送</div>
+      </div>
+      <div class="clear"></div>
+   
+  </div>
+</div>                                                                   
+</body> 
+  
+</html>
